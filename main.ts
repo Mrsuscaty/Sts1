@@ -75,24 +75,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    projectile = sprites.createProjectileFromSprite(img`
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . 4 . . . . . 
-        . . . . 2 . . . . 4 4 . . . . . 
-        . . . . 2 4 . . 4 5 4 . . . . . 
-        . . . . . 2 4 d 5 5 4 . . . . . 
-        . . . . . 2 5 5 5 5 4 . . . . . 
-        . . . . . . 2 5 5 5 5 4 . . . . 
-        . . . . . . 2 5 4 2 4 4 . . . . 
-        . . . . . . 4 4 . . 2 4 4 . . . 
-        . . . . . 4 4 . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        . . . . . . . . . . . . . . . . 
-        `, mySprite, 0, 100)
+    let projectile: Sprite = null
     controller.moveSprite(projectile, 1000, 1000)
 })
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -323,7 +306,6 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
-let projectile: Sprite = null
 let mySprite: Sprite = null
 scene.setBackgroundImage(img`
     7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
