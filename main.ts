@@ -733,4 +733,3 @@ forever(function () {
 forever(function () {
     music.play(music.stringPlayable("E B C G E B D G ", 90), music.PlaybackMode.UntilDone)
 })
-set Sprite life3
