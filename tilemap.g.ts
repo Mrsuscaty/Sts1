@@ -89,25 +89,6 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16], TileScale.Sixteen);
-            case "level":
-            case "level4":return tiles.createTilemap(hex`10001000030404040404040404040404040404050a02020202020b0b0b0b0b02020202060a0b0b02010c0c0b0b0b020202020b060a0b020b0b0c0c0b0b0b0b0b02020b060a0b020b0b0b0b020b0b0b0b02020b060a0b020202020b02020b0b0101020b0b0a0b0b0102020b0b02020b0102020b060a02020202020b0b0b0b0b01020b0b060a0b0b0b02010b0b0b0b0b01020b0b060a0b0b0b020202020b0b0b02020b0b060c0c0c0b0b0b0b020b0b01020b0b0b060c0c0c0b0b0b0b02020202020b0b0b060a0b020202020b0b0b0b0b0b0b0b0c0c0a0b0101010202020b0b0b0b0b0c0c0c0a0b0b0b01010101020202020b0b0b0609080808080808080808080c08080807`, img`
-. . . . . . . . . . . . . . . . 
-. 2 2 2 2 2 . . . . . 2 2 2 2 . 
-. . . 2 2 . . . . . 2 2 2 2 . . 
-. . 2 . . . . . . . . . 2 2 . . 
-. . 2 . . . . 2 . . . . 2 2 . . 
-. . 2 2 2 2 . 2 2 . . 2 2 2 . . 
-. . . 2 2 2 . . 2 2 . 2 2 2 . . 
-. 2 2 2 2 2 . . . . . 2 2 . . . 
-. . . . 2 2 . . . . . 2 2 . . . 
-. . . . 2 2 2 2 . . . 2 2 . . . 
-. . . . . . . 2 . . 2 2 . . . . 
-. . . . . . . 2 2 2 2 2 . . . . 
-. . 2 2 2 2 . . . . . . . . . . 
-. . 2 2 2 2 2 2 . . . . . . . . 
-. . . . 2 2 2 2 2 2 2 2 . . . . 
-. . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16,sprites.castle.tileGrass2,sprites.builtin.forestTiles0,sprites.castle.tilePath1,sprites.castle.tilePath2,sprites.castle.tilePath3,sprites.castle.tilePath6,sprites.castle.tilePath9,sprites.castle.tilePath8,sprites.castle.tilePath7,sprites.castle.tilePath4,sprites.castle.tilePath5,sprites.swamp.swampTile2], TileScale.Sixteen);
             case "level6":
             case "level6":return tiles.createTilemap(hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`, img`
 . . . . . . . . . . . . . . . . 
@@ -168,6 +149,25 @@ namespace myTiles {
 . . . . . . . . 
 . . . . . . . . 
 `, [myTiles.transparency16,sprites.builtin.forestTiles5,sprites.builtin.forestTiles7,sprites.builtin.forestTiles13,sprites.builtin.forestTiles15,sprites.builtin.forestTiles14,sprites.builtin.forestTiles6,sprites.builtin.forestTiles11,sprites.builtin.forestTiles9,myTiles.tile4], TileScale.Sixteen);
+            case "level":
+            case "level4":return tiles.createTilemap(hex`10001000030404040404040402040404040404050802020202020909090909020202020608090902010a0a09090902020202090602090209090a0a0909020909020209060809020909090902090909090202090608090202020209020209090101020902080909010202090902020901020209060802020202020909020909010209090608090909020109090909090102090906080909090202020209090902020902060a0a0a090909090209090102090909060a020a0909020902020202020909090608090202020209090909090909090a0a080901010102020209090902090a0a020809090901010101020202020909090602070707070707070707070a07070702`, img`
+. . . . . . . . . . . . . . . . 
+. 2 2 2 2 2 . . . . . 2 2 2 2 . 
+. . . 2 2 . . . . . 2 2 2 2 . . 
+. . 2 . . . . . . . . . 2 2 . . 
+. . 2 . . . . 2 . . . . 2 2 . . 
+. . 2 2 2 2 . 2 2 . . 2 2 2 . . 
+. . . 2 2 2 . . 2 2 . 2 2 2 . . 
+. 2 2 2 2 2 . . . . . 2 2 . . . 
+. . . . 2 2 . . . . . 2 2 . . . 
+. . . . 2 2 2 2 . . . 2 2 . . . 
+. . . . . . . 2 . . 2 2 . . . . 
+. . . . . . . 2 2 2 2 2 . . . . 
+. . 2 2 2 2 . . . . . . . . . . 
+. . 2 2 2 2 2 2 . . . . . . . . 
+. . . . 2 2 2 2 2 2 2 2 . . . . 
+. . . . . . . . . . . . . . . . 
+`, [myTiles.transparency16,sprites.castle.tileGrass2,sprites.builtin.forestTiles0,sprites.castle.tilePath1,sprites.castle.tilePath2,sprites.castle.tilePath3,sprites.castle.tilePath6,sprites.castle.tilePath8,sprites.castle.tilePath4,sprites.castle.tilePath5,sprites.swamp.swampTile2], TileScale.Sixteen);
         }
         return null;
     })
